@@ -23,6 +23,11 @@ public class Dog {
 	@Column(name = "DOGWEIGHT")
 	private String dogWeight;
 	
+	public Dog() {
+		super();
+	}
+
+	
 	public Dog(int dogId, String dogName, String dogBreed, String dogGender, String dogColor, String dogWeight) {
 		super();
 		this.dogId = dogId;
@@ -73,6 +78,7 @@ public class Dog {
 		this.dogColor = dogColor;
 	}
 
+	
 	public String getDogWeight() {
 		return dogWeight;
 	}
